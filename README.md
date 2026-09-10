@@ -2,6 +2,8 @@
 
 A responsive, static front-end recreation of the University of Maryland Undergraduate Admissions homepage at [admissions.umd.edu](https://admissions.umd.edu/).
 
+**Live demo:** [jiayukang0414.github.io/umd-admissions-clone](https://jiayukang0414.github.io/umd-admissions-clone/)
+
 ## Run locally
 
 ```bash

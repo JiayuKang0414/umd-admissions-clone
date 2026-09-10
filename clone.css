@@ -1,0 +1,101 @@
+.clone-chat {
+  align-items: flex-end;
+  bottom: 25px;
+  display: flex;
+  gap: 15px;
+  position: fixed;
+  right: 24px;
+  z-index: 1000;
+}
+
+.clone-chat button {
+  border: 0;
+  cursor: pointer;
+  font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+}
+
+.clone-chat-card {
+  background: #efefef;
+  border-radius: 16px;
+  box-shadow: 0 3px 16px rgba(0, 0, 0, 0.3);
+  color: #242424;
+  overflow: hidden;
+  padding: 0;
+  text-align: left;
+  width: 320px;
+}
+
+.clone-chat-title {
+  align-items: center;
+  background: #e21833;
+  color: #fff;
+  display: flex;
+  font-size: 21px;
+  font-weight: 700;
+  justify-content: space-between;
+  padding: 15px 20px;
+}
+
+.clone-chat-title b {
+  font-size: 29px;
+  font-weight: 300;
+  line-height: 20px;
+}
+
+.clone-chat-copy {
+  align-items: flex-start;
+  display: flex;
+  font-size: 16px;
+  gap: 14px;
+  line-height: 1.45;
+  padding: 20px 22px;
+}
+
+.clone-chat-copy i {
+  font-size: 29px;
+  font-style: normal;
+}
+
+.clone-chat-launch {
+  align-items: center;
+  background: #ffd200;
+  border-radius: 50%;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.25);
+  display: flex;
+  font-size: 22px;
+  height: 54px;
+  justify-content: center;
+  width: 54px;
+}
+
+.clone-chat[data-closed] .clone-chat-card {
+  display: none;
+}
+
+@media (max-width: 479px) {
+  .clone-chat {
+    bottom: 14px;
+    gap: 8px;
+    right: 12px;
+  }
+
+  .clone-chat-card {
+    border-radius: 12px;
+    width: 278px;
+  }
+
+  .clone-chat-title {
+    font-size: 16px;
+    padding: 11px 15px;
+  }
+
+  .clone-chat-copy {
+    font-size: 13px;
+    padding: 14px 15px;
+  }
+
+  .clone-chat-launch {
+    height: 45px;
+    width: 45px;
+  }
+}

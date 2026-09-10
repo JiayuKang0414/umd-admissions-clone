@@ -1,0 +1,14 @@
+{
+  "name": "umd-admissions-clone",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A responsive front-end recreation of the UMD Undergraduate Admissions homepage.",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "vite build",
+    "preview": "vite preview --host 0.0.0.0"
+  },
+  "devDependencies": {
+    "vite": "^7.1.4"
+  }
+}

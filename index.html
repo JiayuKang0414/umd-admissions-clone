@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A faithful front-end recreation of the University of Maryland Undergraduate Admissions homepage." />
+    <title>Office of Undergraduate Admissions | Homepage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,600;0,700;0,800;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" type="module"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <header class="site-header" id="site-header">
+      <div class="university-bar">UNIVERSITY OF MARYLAND</div>
+      <div class="nav-shell">
+        <nav class="utility-nav" aria-label="Utility navigation">
+          <a href="https://admissions.umd.edu/visit"><span aria-hidden="true">●</span> Visit UMD</a>
+          <i></i>
+          <a href="https://admissions.umd.edu/apply-now"><span aria-hidden="true">●</span> Apply Now</a>
+          <i></i>
+          <a href="https://admissions.umd.edu/connect"><span aria-hidden="true">●</span> Connect</a>
+          <i></i>
+          <a href="https://admissions.umd.edu/search"><span aria-hidden="true">⌕</span> Search</a>
+        </nav>
+
+        <div class="main-nav">
+          <a class="brand" href="https://admissions.umd.edu/" aria-label="University of Maryland Undergraduate Admissions home">
+            <img src="assets/images/umd-logo.svg" alt="University of Maryland" />
+            <span>Undergraduate<br />Admissions</span>
+          </a>
+          <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links"><span></span><span></span><span></span><b>Menu</b></button>
+          <div class="nav-links" id="nav-links">
+            <div class="nav-item">
+              <a href="https://admissions.umd.edu/academics">Academics</a>
+              <button type="button" aria-expanded="false" aria-label="Show Academics links">⌄</button>
+              <div class="dropdown">
+                <a href="https://admissions.umd.edu/programs">All Programs</a>
+                <a href="https://admissions.umd.edu/programs/colleges-schools">Colleges &amp; Schools</a>
+                <a href="https://admissions.umd.edu/programs/interest">Programs by Interest</a>
+                <a href="https://admissions.umd.edu/academics/special-programs">Special Programs</a>
+              </div>
+            </div>
+            <div class="nav-item">
+              <a href="https://admissions.umd.edu/student-life">Student Life</a>
+              <button type="button" aria-expanded="false" aria-label="Show Student Life links">⌄</button>
+              <div class="dropdown">
+                <a href="https://admissions.umd.edu/visit">Visit UMD</a>
+                <a href="https://admissions.umd.edu/student-life/housing">Housing</a>
+                <a href="https://admissions.umd.edu/student-life/campus-community">Campus &amp; Community</a>
+              </div>
+            </div>
+            <div class="nav-item">
+              <a href="https://admissions.umd.edu/how-to-apply">How To Apply</a>
+              <button type="button" aria-expanded="false" aria-label="Show How To Apply links">⌄</button>
+              <div class="dropdown">
+                <a href="https://admissions.umd.edu/apply/admission-review-process-factors">Admission Review</a>
+                <a href="https://admissions.umd.edu/apply/application-deadlines">Application Deadlines</a>
+                <a href="https://admissions.umd.edu/apply/submitting-documents">Submitting Documents</a>
+              </div>
+            </div>
+            <div class="nav-item">
+              <a href="https://admissions.umd.edu/tuition">Tuition &amp; Aid</a>
+              <button type="button" aria-expanded="false" aria-label="Show Tuition and Aid links">⌄</button>
+              <div class="dropdown dropdown-right">
+                <a href="https://admissions.umd.edu/tuition/cost-of-attendance">Cost of Attendance</a>
+                <a href="https://financialaid.umd.edu/">Financial Aid</a>
+                <a href="https://admissions.umd.edu/tuition/scholarships">Scholarships</a>
+              </div>
+            </div>
+            <div class="mobile-utility">
+              <a href="https://admissions.umd.edu/visit">Visit UMD</a>
+              <a href="https://admissions.umd.edu/apply-now">Apply Now</a>
+              <a href="https://admissions.umd.edu/connect">Connect</a>
+              <a href="https://admissions.umd.edu/search">Search</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero" aria-labelledby="hero-title">
+        <video class="hero-video" autoplay muted loop playsinline poster="assets/images/hero.jpg">
+          <source src="assets/video/hero.mp4" type="video/mp4" />
+        </video>
+        <div class="hero-shade"></div>
+        <div class="hero-content wrap">
+          <h1 id="hero-title">Be A<br />Terp</h1>
+          <p>Terps love a challenge. A problem that needs a solution. A barrier that needs breaking down. You are smart, scrappy and determined. You value diversity, innovation, entrepreneurship and imagination. Ready to start your fearless journey?</p>
+          <a class="outline-btn yellow" href="https://admissions.umd.edu/academics">Explore Academics at UMD</a>
+          <button class="video-toggle" type="button" aria-label="Pause background video">Ⅱ</button>
+        </div>
+      </section>
+
+      <section class="audience" aria-label="Information for">
+        <div class="audience-mark" aria-hidden="true"></div>
+        <div class="wrap audience-inner">
+          <p>Information For:</p>
+          <div class="audience-links">
+            <a href="https://admissions.umd.edu/persona/prospective-students">Prospective Students</a>
+            <a href="https://admissions.umd.edu/persona/parent-familes">Parents &amp; Families</a>
+            <a href="https://admissions.umd.edu/persona/counselors-advisors">Counselors &amp; Advisors</a>
+            <a href="https://admissions.umd.edu/persona/admitted-students">Admitted Students</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="feature feature-centered about" aria-labelledby="about-title">
+        <div class="centered-grid">
+          <div class="feature-image"><img src="assets/images/testudo-a.jpg" alt="Bronze Testudo statue looking over McKeldin Mall at sunset" /></div>
+          <article class="feature-card">
+            <h2 id="about-title">About UMD</h2>
+            <p>The University of Maryland (UMD) is the state of Maryland's flagship institution, a top-ranked public research university, and a global leader in research, entrepreneurship and innovation. Our campus community is strengthened by the richness of perspectives, lifestyles and personalities brought together here. We are home to students, faculty, staff, and nearly 405,000 alumni dedicated to moving Fearlessly Forward in pursuit of excellence and impact for the public good.</p>
+            <a class="outline-btn red" href="https://www.umd.edu/rankings-and-fast-facts">Rankings &amp; Fast Facts <span>↗</span></a>
+            <div class="feature-data">
+              <div class="stat"><strong>1856</strong><span>Year UMD was founded as the Maryland Agricultural College</span></div>
+              <div class="mini-links"><a href="https://admissions.umd.edu/student/land-acknowledgement">Land Acknowledgement</a><a href="https://diversity.umd.edu/">UMD's Commitment to Diversity</a></div>
+            </div>
+          </article>
+          <div class="feature-image"><img src="assets/images/testudo-b.jpg" alt="Bronze Testudo statue at sunset" /></div>
+        </div>
+        <div class="action-band">
+          <div class="wrap action-inner"><p>You can only learn so much about the<br />University of Maryland from a website.</p><span></span><a class="outline-btn white" href="https://admissions.umd.edu/visit">◉ &nbsp; Plan Your Visit</a></div>
+        </div>
+      </section>
+
+      <section class="quote-section quote-james" aria-label="A message from admissions">
+        <div class="quote-arrow yellow-arrow" aria-hidden="true"></div>
+        <blockquote>
+          <p>You will get to know the university as a world-class leader in research and teaching, entrepreneurship and innovation, and sustainability and security. But most of all, you will get to know us as caring people who are committed to the success of our university and students.</p>
+          <footer><img src="assets/images/james-massey.jpg" alt="James B. Massey, Jr." /><span><strong>James B. Massey, Jr.</strong><small>Director of Undergraduate Admissions</small></span></footer>
+        </blockquote>
+      </section>
+
+      <section class="feature feature-split academics" aria-labelledby="academics-title">
+        <div class="split-grid">
+          <div class="feature-image"><img src="assets/images/academics.jpg" alt="Students working with technology" /></div>
+          <article class="feature-card">
+            <h2 id="academics-title">Academics</h2>
+            <p>With over 100 majors across 12 colleges and schools, we have you covered. Pick one, pick two or even create your own major through our Individual Studies Program and explore a new interest through one of our 90+ minors.</p>
+            <a class="outline-btn red" href="https://admissions.umd.edu/academics">Explore Academics at UMD</a>
+            <div class="feature-data">
+              <div class="stat"><strong>18:1</strong><span>Student-to-faculty ratio</span></div>
+              <div class="mini-links"><a href="https://admissions.umd.edu/programs">All Programs</a><a href="https://admissions.umd.edu/programs/colleges-schools">Colleges &amp; Schools</a></div>
+            </div>
+          </article>
+        </div>
+        <div class="action-band"><div class="wrap action-inner"><p>Have questions? The Office of Undergraduate<br />Admissions is here for you.</p><span></span><a class="outline-btn white" href="https://admissions.umd.edu/connect">Get In Touch</a></div></div>
+      </section>
+
+      <section class="quote-section compact-quote" aria-label="Parent testimonial">
+        <blockquote>
+          <p>I was nervous to send my child so far away, but the support and resources at UMD have made her feel at home. She’s made great friends.</p>
+          <footer><span><strong>Mom of a Class of '24 Student</strong><small>Rockville, MD</small></span></footer>
+        </blockquote>
+      </section>
+
+      <section class="feature feature-centered student-life" aria-labelledby="student-life-title">
+        <div class="centered-grid">
+          <div class="feature-image"><img src="assets/images/student-life-a.jpg" alt="Student playing pool at TerpZone" /></div>
+          <article class="feature-card">
+            <h2 id="student-life-title">Student Life</h2>
+            <p>There is more to the University of Maryland than what you learn in the classroom. Whatever experience you're looking for to round out your education, you can find it here. And our proximity to Washington, D.C. means limitless opportunities.</p>
+            <a class="outline-btn red" href="https://admissions.umd.edu/student-life">Explore Student Life at UMD</a>
+            <div class="feature-data two-stats">
+              <div class="stat"><strong>800+</strong><span>Student Clubs &amp; Organizations</span></div>
+              <div class="stat"><strong>40+</strong><span>Club Sports</span></div>
+            </div>
+          </article>
+          <div class="feature-image"><img src="assets/images/student-life-b.jpg" alt="Students cheering at a Maryland sports game" /></div>
+        </div>
+        <div class="action-band"><div class="wrap action-inner"><p>Speaking to UMD students during an on-campus event can help you learn first-hand what it’s like to #BeATerp!</p><span></span><a class="outline-btn white" href="https://admissions.umd.edu/visit">◉ &nbsp; Plan Your Visit</a></div></div>
+      </section>
+
+      <section class="quote-section angelica-quote" aria-label="Student testimonial">
+        <blockquote>
+          <p>I am proud to #BeATerp! You'll find that students and professors on campus are welcoming and want you to succeed. I'm part of an accomplished campus that values diversity, academics, and social and professional opportunities. With 800+ clubs and 100+ majors, you'll find people with the same passions as you.</p>
+          <footer><span><strong>Angelica G. '23</strong><small>Public Policy Student</small></span></footer>
+        </blockquote>
+      </section>
+
+      <section class="feature feature-split apply" aria-labelledby="apply-title">
+        <div class="split-grid reverse">
+          <article class="feature-card">
+            <h2 id="apply-title">How to Apply</h2>
+            <p>You’ve done your research and explored your options, and you know that UMD is the perfect place for you. Now you're ready to apply! To get started, review the steps to apply on the freshman, transfer, or international application page.</p>
+            <a class="outline-btn red" href="https://admissions.umd.edu/how-to-apply">Learn How to Apply to UMD</a>
+            <div class="feature-data">
+              <div class="stat"><strong>23</strong><span>Admission Review Factors</span></div>
+              <div class="mini-links"><a href="https://admissions.umd.edu/apply/submitting-documents">Submitting Documents</a><a href="https://admissions.umd.edu/apply/admission-review-process-factors">Admission Review Process</a></div>
+            </div>
+          </article>
+          <div class="feature-image"><img src="assets/images/apply.jpg" alt="The M sculpture on the University of Maryland campus" /></div>
+        </div>
+        <div class="action-band"><div class="wrap action-inner"><p>If you know that UMD is the perfect place for<br />you, get started on your application.</p><span></span><a class="outline-btn white" href="https://admissions.umd.edu/apply-now">Apply Now</a></div></div>
+      </section>
+
+      <section class="resources">
+        <div class="wrap resource-grid">
+          <article>
+            <h2>Tuition &amp; Aid</h2>
+            <p>The University of Maryland offers an array of financial aid programs—including scholarships, grants, loans and student employment—as part of our commitment to making an excellent education affordable. We encourage you to visit the Office of Student Financial Aid to explore types of aid and ways to finance a higher education.</p>
+            <a class="outline-btn red" href="https://admissions.umd.edu/tuition">Learn About Tuition &amp; Aid at UMD</a>
+            <h3>Resources</h3>
+            <div class="text-links"><a href="https://admissions.umd.edu/tuition/cost-of-attendance">Estimated Cost of Attendance</a><a href="https://financialaid.umd.edu/">Office of Student Financial Aid</a><a href="https://financialaid.umd.edu/terrapin-commitment">Learn About Terrapin Commitment</a></div>
+          </article>
+          <article>
+            <h2>Important Dates</h2>
+            <p>We have several application deadlines, depending on what type of applicant you are and the semester you wish to start at the University of Maryland. Review all deadlines to determine when you should apply and when you can expect to receive an admission decision.</p>
+            <a class="outline-btn red" href="https://admissions.umd.edu/apply/application-deadlines">View All Application Deadlines</a>
+            <h3>Early Action Deadlines</h3>
+            <dl class="deadline-list"><div><dt>Freshman Applying for Fall</dt><dd>November 1</dd></div><div><dt>Transfers Applying for Fall</dt><dd>March 1</dd></div><div><dt>Shady Grove Applying for Fall</dt><dd>June 1</dd></div><div><dt>Transfers Applying for Spring</dt><dd>August 1</dd></div><div><dt>Shady Grove Applying for Spring</dt><dd>November 15</dd></div></dl>
+          </article>
+        </div>
+      </section>
+
+      <section class="stay-touch">
+        <div class="stay-bg"></div>
+        <div class="stay-content wrap">
+          <h2>There is a lot more to learn about UMD, so let's stay in touch!</h2>
+          <div><a href="https://apply.umd.edu/register/request-info">Join Our Mailing List</a><a href="https://admissions.umd.edu/connect">Connect</a></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="wrap">
+        <img class="footer-logo" src="assets/images/umd-logo.svg" alt="University of Maryland" />
+        <div class="footer-grid">
+          <div class="contact-block"><strong>Undergraduate Admissions</strong><address>Mitchell Building<br />7999 Regents Dr.<br />College Park, MD 20742</address><a href="tel:18004225867">1-800-422-5867</a><a href="mailto:ApplyMaryland@umd.edu">ApplyMaryland@umd.edu</a><div class="socials"><span>◉</span><span>f</span><span>▶</span><span>◎</span></div></div>
+          <nav aria-label="Footer links"><a href="https://www.umd.edu/majors">Majors &amp; Minors</a><a href="https://admissions.umd.edu/student-life">Student Life</a><a href="https://admissions.umd.edu/apply/admission-requirements">Admission Requirements</a><a href="https://admissions.umd.edu/apply/application-deadlines">Application Deadlines</a><a href="https://admissions.umd.edu/tuition">Tuition &amp; Aid</a></nav>
+          <nav aria-label="Information links"><a href="https://admissions.umd.edu/visit">Information For</a><a href="https://admissions.umd.edu/persona/prospective-students">Prospective Students</a><a href="https://admissions.umd.edu/persona/parent-familes">Parents &amp; Families</a><a href="https://admissions.umd.edu/persona/counselors-advisors">Counselors &amp; Advisors</a><a href="https://admissions.umd.edu/persona/admitted-students">Admitted Students</a></nav>
+          <nav class="footer-actions" aria-label="Actions"><a href="https://admissions.umd.edu/visit">⌖ &nbsp; Visit UMD</a><a href="https://admissions.umd.edu/apply-now">● &nbsp; Apply Now</a><a href="https://admissions.umd.edu/connect">● &nbsp; Connect</a></nav>
+        </div>
+        <div class="footer-bottom"><span>© <span id="year"></span> UNIVERSITY OF MARYLAND</span><a href="https://umd.edu/privacy-notice">Privacy Notice</a><a href="https://umd.edu/web-accessibility">Web Accessibility</a></div>
+      </div>
+    </footer>
+
+    <aside class="chat" aria-live="polite">
+      <button class="chat-card" type="button" aria-label="Close chat preview"><span class="chat-title">Chat with Shelly <b>×</b></span><span class="chat-copy"><i>🐢</i> Hi there! I’m Shelly here to answer your questions. What would you like to know?</span></button>
+      <button class="chat-launch" type="button" aria-label="Open chat">▰</button>
+    </aside>
+  </body>
+</html>
